@@ -1,0 +1,61 @@
+{
+  "SiteLists":
+  [
+    {   "ProjectName"  : "Dade Tamin",
+        "ProjectUrl"   : "http://www.datatamin.ir" ,
+        "Receivers"    : "a.gharakhanlou@gmail.com",
+        "CellPhones"   : "09143011491"
+     
+    },
+    {   "ProjectName"  : "EkramOnline",
+        "ProjectUrl"   : "https://ekram.emdad.ir" ,
+        "Receivers"    : "a.gharakhanlou@gmail.com,v_nasiry@yahoo.com,s.jabbari77@gmail.com",
+        "CellPhones"   : "09143011491,09144023083,09014635773"
+    
+    },
+    {   "ProjectName"  : "EkramBank",
+        "ProjectUrl"   : "http://91.224.111.79/api/values" ,
+        "Receivers"    : "a.gharakhanlou@gmail.com,v_nasiry@yahoo.com,s.jabbari77@gmail.com",
+        "CellPhones"   : "09143011491,09144023083,09014635773"
+    
+    },
+    {   "ProjectName"  : "nikookari",
+        "ProjectUrl"   : "http://nikookari.ikrf.ir/nikookari" ,
+        "Receivers"    : "a.gharakhanlou@gmail.com,v_nasiry@yahoo.com,s.jabbari77@gmail.com",
+        "CellPhones"   : "09143011491,09144023083,09014635773"
+    },
+    {   "ProjectName"  : "nikookari_firewall",
+        "ProjectUrl"   : "http://91.224.110.203" ,
+        "Receivers"    : "a.gharakhanlou@gmail.com,v_nasiry@yahoo.com,s.jabbari77@gmail.com",
+        "CellPhones"   : "09143011491,09144023083,09014635773"
+    
+    },
+    {   "ProjectName"  : "Tamin",
+        "ProjectUrl"   : "http://law.tamin.ir/ho" ,
+        "Receivers"    : "a.gharakhanlou@gmail.com,hekmatyy@gmail.com,s.jabbari77@gmail.com",
+        "CellPhones"   : "09143011491,09149028858"
+    
+    },
+    
+    {   "ProjectName"  : "Sajma",
+        "ProjectUrl"   : "https://sajma.abfaazarbaijan.ir/sys/fa/rmax/login/login" ,
+        "Receivers"    : "a.gharakhanlou@gmail.com,hekmatyy@gmail.com",
+        "CellPhones"   : "09143011491,09149028858"
+    
+    },
+    {   "ProjectName"  : "Kish Legal",
+        "ProjectUrl"   : "http://109.230.79.70:3227/syskishlaw/fa/rmax/login/login" ,
+        "Receivers"    : "a.gharakhanlou@gmail.com,hekmatyy@gmail.com,me.hosseinzadeh@yahoo.com",
+        "CellPhones"   : "09143011491,09149028858,09147852001"
+    
+    },
+    {   "ProjectName"  : "Abfa Pmis",
+        "ProjectUrl"   : "https://sajma.abfaazarbaijan.ir/syspmis/fa/rmax/login/login" ,
+        "Receivers"    : "a.gharakhanlou@gmail.com,hekmatyy@gmail.com,me.hosseinzadeh@yahoo.com",
+        "CellPhones"   : "09143011491,09149028858,09147852001"
+    
+    }
+    
+    
+  ]
+}

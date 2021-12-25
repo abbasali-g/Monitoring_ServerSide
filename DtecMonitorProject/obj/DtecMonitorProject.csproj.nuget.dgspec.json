@@ -1,0 +1,84 @@
+{
+  "format": 1,
+  "restore": {
+    "/d/DtecMonitor/Monitoring_ServerSide_Git/Monitoring_ServerSide/DtecMonitorProject/DtecMonitorProject.csproj": {}
+  },
+  "projects": {
+    "/d/DtecMonitor/Monitoring_ServerSide_Git/Monitoring_ServerSide/DtecMonitorProject/DtecMonitorProject.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/d/DtecMonitor/Monitoring_ServerSide_Git/Monitoring_ServerSide/DtecMonitorProject/DtecMonitorProject.csproj",
+        "projectName": "DtecMonitorProject",
+        "projectPath": "/d/DtecMonitor/Monitoring_ServerSide_Git/Monitoring_ServerSide/DtecMonitorProject/DtecMonitorProject.csproj",
+        "packagesPath": "/home/abbas/.nuget/packages/",
+        "outputPath": "/d/DtecMonitor/Monitoring_ServerSide_Git/Monitoring_ServerSide/DtecMonitorProject/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/abbas/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[0.63.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "version": "[3.1.17, 3.1.17]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
