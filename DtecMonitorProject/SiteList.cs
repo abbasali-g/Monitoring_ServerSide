@@ -27,7 +27,7 @@ namespace DtecMonitorProject
         public int backup      { get; set; }
         public string Date      { get; set; }
         public string Time      { get; set; }
-        public string Serial1 { get; set; }
+        public int webservice { get; set; }
 
     }
     

@@ -39,9 +39,9 @@ namespace DtecMonitorProject
                 {
                     conn.Open();
                     string insert_query = (" INSERT INTO INDEP_SITEMONITOR " +
-                                           " (MONITORDATE,MONITORTIME, PROJECTNAME,WEBSITE, STATUSCODE, DISK, CPU, MEM, DBCON, BACKUP, SERIAL1, JSONDATA) " +
+                                           " (MONITORDATE,MONITORTIME, PROJECTNAME,WEBSITE, STATUSCODE, DISK, CPU, MEM, DBCON, BACKUP, WEBSERVICE, JSONDATA) " +
                                            " VALUES("+MonitorDate+",'" + sc.Time + "' ,'" + sc.projectname + "'," +website+","+
-                                           statuscode + ","+sc.disk+","+sc.cpu_percent+", "+sc.mem_percent+", "+sc.dbcon+","+sc.backup+",'"+sc.Serial1+"', '"+JSONDATA+"');");
+                                           statuscode + ","+sc.disk+","+sc.cpu_percent+", "+sc.mem_percent+", "+sc.dbcon+","+sc.backup+", "+sc.webservice+",'"+JSONDATA+"');");
                     MySqlCommand cmd = new MySqlCommand(insert_query, conn);
                     await cmd.ExecuteNonQueryAsync();
                     conn.Close();
@@ -75,7 +75,7 @@ namespace DtecMonitorProject
                  sc.projectname = site.ProjectName;
                  sc.Date = DateTime.Now.ToShortDateString();
                  sc.Time = Strings.Left(DateTime.Now.ToString("HH:mm"), 5);
-                 sc.Serial1 = "";
+                 
          
                  int statuscode = 1;
                  string JSONDATA = "{}";
