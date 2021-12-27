@@ -19,7 +19,8 @@ namespace DtecMonitorProject
                 DateTime dt = DateTime.Parse(sc.Date);
                 if (DateTime.Now > dt.AddMinutes(45))
                     siteData+="##Monitor Service is not working, plz check(" + sc.Date.ToString() +")";
-                
+
+                await Task.Delay(1);
             }
             catch (Exception e)
             {
@@ -64,13 +65,13 @@ namespace DtecMonitorProject
                     {
                         statuscode = 0;
                         statuscodeAll=0;
-                        smsError += "##Monitor Service is not working, plz check" +"# now:" +dt.ToString()+  "#Sys:" +sc.Date.ToString();
+                        smsError += "##Monitor Service is not working" +"# now:" +dt.ToString()+  "#Sys:" +sc.Date.ToString();
                     }
-                    if (DateTime.Now.AddMinutes(5) < dt)
+                    if (DateTime.Now.AddMinutes(10) < dt)
                     {
                         statuscode = 0;
                         statuscodeAll=0;
-                        smsError += "##Server Date Time is incorrect,plz check";
+                        smsError += "##Check Server DateTime";
                     }
                     
                     if(sc.mem_percent>scAll.mem_percent)
@@ -87,22 +88,22 @@ namespace DtecMonitorProject
 
                         if (sc.disk == 0)
                         {
-                            smsError += "##Disk Is Full or Will be Full!!plz check";
+                            smsError += "##Disk Is Full or Will be Full";
                             scAll.disk = 0;
                         }
                         if (sc.dbcon == 0)
                         {
-                            smsError += "##Database Connection Error!!plz check";
+                            smsError += "##Database Connection Error";
                             scAll.dbcon = 0;
                         }
                         if (sc.backup == 0)
                         {
-                            smsError += "##Database Backup Error!!plz check";
+                            smsError += "##Database Backup Error";
                             scAll.backup = 0;
                         }
                         if (sc.webservice == 0)
                         {
-                            smsError += "##Webservice Error!!plz check";
+                            smsError += "##Webservice Error";
                             scAll.webservice = 0;
                         }
 

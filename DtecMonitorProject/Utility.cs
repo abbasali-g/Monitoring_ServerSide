@@ -36,6 +36,7 @@ namespace DtecMonitorProject
             }
             catch (Exception e)
             {
+                await Utility.writeErrorAsync(e.Message);
             }
             finally
             {

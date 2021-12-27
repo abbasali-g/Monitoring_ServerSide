@@ -57,6 +57,7 @@ namespace DtecMonitorProject
                             }
                             catch (Exception ex)
                             {
+                                await Utility.writeErrorAsync(ex.Message);
                                 await Task.Delay(5000);
                                 await client.GetAsync(projSite.ProjectUrl.Replace("nositescan_", ""));
                             }
@@ -73,6 +74,7 @@ namespace DtecMonitorProject
                         }
                         catch (Exception ex)
                         {
+                            await Utility.writeErrorAsync(ex.Message);
                             await Task.Delay(35000);
                             response = await client.GetAsync(projSite.ProjectUrl);
                         }
@@ -84,6 +86,7 @@ namespace DtecMonitorProject
                     }
                     catch (Exception ex)
                     {
+                        await Utility.writeErrorAsync(ex.Message);
                         StoreData st = new StoreData();
                         await Task.Run(() => st.writeEmptyData(projSite,ex.Message.ToString(),true));
                     }
