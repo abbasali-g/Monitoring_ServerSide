@@ -1,3 +1,0 @@
-14:02:Object reference not set to an instance of an object.
-14:07:sendSmsAsyn:Name or service not known
-14:14:sendSmsAsyn:Name or service not known
