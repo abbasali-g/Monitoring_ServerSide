@@ -67,11 +67,12 @@ namespace DtecMonitorProject
                  
                  string smsText = site.ProjectName + "("+Strings.Left(DateTime.Now.ToString("HH:mm"), 5)+") : Site is  Down ...";
                  SiteResponse sc = new SiteResponse();
-                 sc.backup = 0;
-                 sc.cpu_percent = 0;
-                 sc.dbcon = 0;
-                 sc.disk = 0;
-                 sc.mem_percent = 0;
+                 sc.backup = 2;
+                 sc.cpu_percent = 2;
+                 sc.dbcon = 2;
+                 sc.disk = 2;
+                 sc.mem_percent = 2;
+                 sc.webservice  = 2;
                  sc.projectname = site.ProjectName;
                  sc.Date = DateTime.Now.ToShortDateString();
                  sc.Time = Strings.Left(DateTime.Now.ToString("HH:mm"), 5);
