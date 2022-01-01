@@ -1,80 +1,11 @@
 {
   "SiteLists":
   [
-    { "ProjectName"  : "Data Tamin Web ",
-      "ProjectUrl"   : "http://www.datatamin.ir/nositescan_" ,
-      "Receivers"    : "a.gharakhanlou@gmail.com,v_nasiry@yahoo.com,s.jabbari77@gmail.com",
-      "CellPhones"   : "09143011491"
-
-    },
-    { "ProjectName"  : "Emdad Db",
-      "ProjectUrl"   : "http://ekramapp.emdad.ir/sitescandb.htm" ,
-      "Receivers"    : "",
-      "CellPhones"   : "09143011491"
-
-    },
-
-    { "ProjectName"  : "Ekram App",
-      "ProjectUrl"   : "http://ekramapp.emdad.ir/sitescan.htm" ,
-      "Receivers"    : "",
-      "CellPhones"   : ""
-
-    },
+    
     { "ProjectName"  : "Ekram service",
       "ProjectUrl"   : "http://91.224.111.79/sitescan.htm" ,
       "Receivers"    : "",
       "CellPhones"   : "09143011491"
-
-    },
-    { "ProjectName"  : "Emdad Nikookari",
-      "ProjectUrl"   : "http://nikookari.ikrf.ir/nikookari/login.aspxnositescan_" ,
-      "Receivers"    : "a.gharakhanlou@gmail.com,v_nasiry@yahoo.com,s.jabbari77@gmail.com",
-      "CellPhones"   : "09143011491,09144023083,09014635773"
-
-    },
-    {   "ProjectName"  : "Etrat Butorab",
-      "ProjectUrl"   : "http://46.100.58.138:9999/sitescan.htm" ,
-      "Receivers"    : "",
-      "CellPhones"   : "09143011491"
-    },
-    { "ProjectName"  : "Etrat fatemi Payment",
-      "ProjectUrl"   : "http://payment.etrat-fatemi.com/sitescan.htm" ,
-      "Receivers"    : "",
-      "CellPhones"   : ""
-    },
-    { "ProjectName"  : "Etrat fatemi Portal",
-      "ProjectUrl"   : "http://payment.etrat-fatemi.com/sitescandb.htm" ,
-      "Receivers"    : "",
-      "CellPhones"   : ""
-    },
-    { "ProjectName"  : "Sajma App",
-      "ProjectUrl"   : "https://sajma.abfaazarbaijan.ir/sitescan.htm" ,
-      "Receivers"    : "",
-      "CellPhones"   : "09143011491"
-
-    },
-    { "ProjectName"  : "Sajma DB",
-      "ProjectUrl"   : "https://sajma.abfaazarbaijan.ir/sitescandb.htm" ,
-      "Receivers"    : "",
-      "CellPhones"   : ""
-
-    },
-    { "ProjectName"  : "Tamin Db",
-      "ProjectUrl"   : "http://law.tamin.ir/ho/sitescan.htm" ,
-      "Receivers"    : "",
-      "CellPhones"   : "09143011491"
-
-    },
-    { "ProjectName"  : "Kish law",
-      "ProjectUrl"   : "http://109.230.79.70:3227/sitescan.htm" ,
-      "Receivers"    : "",
-      "CellPhones"   : "09143011491,09147852001,09143113171"
-
-    },
-    { "ProjectName"  : "Tabriz Refinery",
-      "ProjectUrl"   : "https://edms.tbzrefinery.co.ir/DCC/sitescan.htm" ,
-      "Receivers"    : "a.gharakhanlou@gmail.com,s.jabbari77@gmail.com,hekmatyy@gmail.com",
-      "CellPhones"   : "09143011491,09014635773,09143113171"
 
     }
 
