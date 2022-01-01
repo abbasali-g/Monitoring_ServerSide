@@ -16,12 +16,12 @@ namespace DtecMonitorProject
         {
             // Notification nt = new Notification();
             // await Task.Run(() => nt.sendSmsAsyn("09143011491", "تست"));
-            string siteContents = "b'eyJwcm9qZWN0bmFtZSI6IkRhZGUgVGFtaW4iLCJkYmNvbiI6MSwiY3B1X3BlicmNlibnQiOjAbuMCwiY3B1X2xvYWQiOjAbuMjMsaIm1libV9wZXJjZW50Ijo2OC44LCJtZW1fdG90YWwiOjcuNywibWVtX3VzZWQiOjQuMiwibWVtX2F2YWlisaYWJlibCI6Mi40LCJkaXNrIjowLCJkaXNrX3BlicmNlibnRfLz0iOjU0LjgsaImRpc2tfdG90YWxfLz0iOjU5LjMzLCJkaXNrX2ZyZWVfLz0iOjI1LjQ1LCJkaXNrX3VzZWRfLz0iOjMwLjg0LCJkaXNrIjowLCJkaXNrX3BlicmNlibnRfLz0iOjU0LjgsaImRpc2tfdG90YWxfLz0iOjU5LjMzLCJkaXNrX2ZyZWVfLz0iOjI1LjQ1LCJkaXNrX3VzZWRfLz0iOjMwLjg0LCJ3ZWJzZXJ2aWNliU3RhdHVzQ29kZSI6IjIwMCIsaIndliYnNlicnZpY2UiOjAbsaInVzZXJzIjoic3VzZXIobmFtZT1hYmJhcywgdGVybWliuYWw9LTAbsaIGhvc3Q9bG9jYWxob3N0LCBzdGFydGVkPTE2NDAb0OTQ0NjQuMCwgcGlikPTIxMDcpIiwiYmFja3VwIjoyLCJTZXJpYWwxIjoiMDAbwMDAbwMDAbwMCIsaIkRhdGUiOiIyMDIxLTEyLTI2IDE0OjI2OjIzLjYxNTg3NSIsaIliRpbWUiOiIxNDoyNiIsaImVycm1zZyI6IndliYnNlicnZpY2U9cnpzeXM9bW9kdWxliIGRtaWRliY29kZSBoYXMgbm8gYXR0cmliidXRliIERNSURliY29kZSJ9'###b'eyJwcm9qZWN0bmFtZSI6IkRhZGUgVGFtaW4iLCJkYmNvbiI6MSwiY3B1X3BlicmNlibnQiOjIwLjAbsaImNwdV9sab2FkIjowLjIzLCJtZW1fcGVyY2VudCI6NjguNywibWVtX3RvdGFsaIjo3LjcsaIm1libV91c2VkIjo0LjIsaIm1libV9hdmFpbGFiZWwiOjIuNCwiZGlizayI6MCwiZGliza19wZXJjZW50Xy89Ijo1NC44LCJkaXNrX3RvdGFsaXy89Ijo1OS4zMywiZGliza19mcmVliXy89IjoyNS40NSwiZGliza191c2VkXy89IjozMC44NCwiZGlizayI6MCwiZGliza19wZXJjZW50Xy89Ijo1NC44LCJkaXNrX3RvdGFsaXy89Ijo1OS4zMywiZGliza19mcmVliXy89IjoyNS40NSwiZGliza191c2VkXy89IjozMC44NCwid2Vic2VydmlijZVN0YXR1c0NvZGUiOiIyMDAbiLCJ3ZWJzZXJ2aWNliIjowLCJ1c2VycyI6InN1c2VyKG5hbWU9YWJiYXMsaIHRlicm1pbmFsaPS0wLCBob3N0PWxvY2FsaaG9zdCwgc3RhcnRliZD0xNjQwNDk0NDY0LjAbsaIHBpZD0yMTAb3KSIsaImJhY2t1cCI6MiwiU2VyaWFsaMSI6IjAbwMDAbwMDAbwMDAbiLCJEYXRliIjoiMjAbyMS0xMi0yNiAbxNDoyNjoyNC4wNTUyNDgiLCJUaW1liIjoiMTQ6MjYiLCJlicnJtc2ciOiJ3ZWJzZXJ2aWNliPXJ6c3lizPW1vZHVsaZSBkbWlikZWNvZGUgaGFzIG5vIGF0dHJpYnV0ZSBETUliEZWNvZGUifQ=='###'eyJwcm9qZWN0bmFtZSI6IkVrcmFtIE9ubGliuZSIsaImRiY29uIjoyLCJjcHVfcGVyY2VudCI6NDcuMSwiY3B1X2xvYWQiOjAbuMCwibWVtX3BlicmNlibnQiOjIzLjcsaIm1libV90b3RhbCI6NjQuMCwibWVtX3VzZWQiOjE1LjIsaIm1libV9hdmFpbGFiZWwiOjQ4LjgsaImRpc2saiOjAbsaImRpc2tfcGVyY2VudF9jOj0iOjk4LjQsaImRpc2tfdG90YWxfYzo9Ijo0NC41MSwiZGliza19mcmVliX2M6PSI6MC43LCJkaXNrX3VzZWRfYzo9Ijo0My44MSwidXNlicnMiOiJzdXNlicihuYW1liPWZhcmhhZCwgdGVybWliuYWw9Tm9uZSwgaG9zdD0wLjAbuMC4wLCBzdGFydGVkPTE1OTAb1NzU2MjQuODkwNTksaIHBpZD1Ob25liKSwgc3VzZXIobmFtZT1BZG1pbmlizdHJhdG9yLCB0ZXJtaW5hbD1Ob25liLCBob3N0PU5vbmUsaIHN0YXJ0ZWQ9MTU5NTQ5Mzk2Ny40NzYwNzExLCBwaWQ9Tm9uZSkiLCJiYWNrdXAbiOjIsaIk1hbnVmYWN0dXJliciI6InZtd2FyZSxpbmMuIiwiTW9kZWwiOiJ2bXdhcmV2aXJ0dWFsacGxhdGZvcm0iLCJDb3Jlic0NvdW50IjoiNCIsaIkNwdU51bSI6IjE2IiwiU2VyaWFsaMiI6IjhliOTk0ZDU2LWU5NjYtOGM1MS0yNjc2LTRliNWY3N2ViOGIwNCIsaIliNlicmlihbDEiOiJ2bXdhcmUtNTY0ZDk5OGU2NmU5NTE4Yy0yNjc2NGU1Zjc3ZWI4YjAb0IiwiRGF0ZSI6IjIwMjAbtMDctMjggMTU6NDk6MjAbuNzAb3OTIzIiwiVGlitZSI6IjE1OjQ5IiwiZXJybXNnIjoiIn0='###";
-            string siteListJson = File.ReadAllText(AppDomain.CurrentDomain.BaseDirectory+ "sites.json").Replace("\"", "'").Replace("\n", "").Replace("\r", "")
-                    .Replace("\t", "");
-            SiteListCol sitelistCol = JsonConvert.DeserializeObject<SiteListCol>(siteListJson);
-            Monitor monitor1 = new Monitor();
-            await monitor1.checkSitesAsyn(sitelistCol.SiteLists[0], siteContents);
+            // string siteContents = "b'eyJwcm9qZWN0bmFtZSI6IkVtZGFkIE1vc2hhcmVrYXQiLCJkYmNvbiI6MiwiY3B1X3BlicmNlibnQiOjAbuMCwiY3B1X2xvYWQiOjAbuMCwibWVtX3BlicmNlibnQiOjEyLjcsaIm1libV90b3RhbCI6MzIuMCwibWVtX3VzZWQiOjQuMSwibWVtX2F2YWlisaYWJlibCI6MjcuOSwiZGlizayI6MSwiZGliza19wZXJjZW50X2M6PSI6MjcuNiwiZGliza190b3RhbF9jOj0iOjI5OS41MSwiZGliza19mcmVliX2M6PSI6MjE2LjkxLCJkaXNrX3VzZWRfYzo9Ijo4Mi42LCJ3ZWJzZXJ2aWNliIjoiMiIsaInVzZXJzIjoic3VzZXIobmFtZT1mYXJoYWQsaIHRlicm1pbmFsaPU5vbmUsaIGhvc3Q9Tm9uZSwgc3RhcnRliZD0xNjQwNTkxNjU3LjExMzM0NjgsaIHBpZD1Ob25liKSwgc3VzZXIobmFtZT1BZG1pbmlizdHJhdG9yLCB0ZXJtaW5hbD1Ob25liLCBob3N0PU5vbmUsaIHN0YXJ0ZWQ9MTY0MDYxMjI1My43MTIxMDEyLCBwaWQ9Tm9uZSkiLCJiYWNrdXAbiOjIsaIk1hbnVmYWN0dXJliciI6InZtd2FyZSxpbmMuIiwiTW9kZWwiOiJ2bXdhcmV2aXJ0dWFsacGxhdGZvcm0iLCJDb3Jlic0NvdW50IjoiNCIsaIkNwdU51bSI6IjE2IiwiU2VyaWFsaMiI6IjU4YTAbxMTQyLTAbyM2QtNTQ5OS05Yjc3LWVhMzc2ZTJkM2E2NCIsaIliNlicmlihbDEiOiJ2bXdhcmUtNDIxMWEwNTgzZDAbyOTk1NC05Yjc3ZWEzNzZliMmQzYTY0IiwiRGF0ZSI6IjIwMjEtMTItMjcgMjAb6NTU6NDcuODgyNDg4IiwiVGlitZSI6IjIwOjU1IiwiZXJybXNnIjoiIn0='###b'eyJwcm9qZWN0bmFtZSI6IkVtZGFkIE1vc2hhcmVrYXRfU2FuZG9nIiwiZGJjb24iOjEsaImNwdV9wZXJjZW50IjowLjAbsaImNwdV9sab2FkIjowLjAbsaIm1libV9wZXJjZW50IjoxMi43LCJtZW1fdG90YWwiOjMyLjAbsaIm1libV91c2VkIjo0LjEsaIm1libV9hdmFpbGFiZWwiOjI3LjksaImRpc2saiOjEsaImRpc2tfcGVyY2VudF9jOj0iOjI3LjYsaImRpc2tfdG90YWxfYzo9IjoyOTkuNTEsaImRpc2tfZnJliZV9jOj0iOjIxNi45MSwiZGliza191c2VkX2M6PSI6ODIuNiwid2Vic2VydmlijZSI6IjIiLCJ1c2VycyI6InN1c2VyKG5hbWU9ZmFyaGFkLCB0ZXJtaW5hbD1Ob25liLCBob3N0PU5vbmUsaIHN0YXJ0ZWQ9MTY0MDU5MTY1Ny4xMTMzNDY4LCBwaWQ9Tm9uZSksaIHN1c2VyKG5hbWU9QWRtaW5pc3RyYXRvciwgdGVybWliuYWw9Tm9uZSwgaG9zdD1Ob25liLCBzdGFydGVkPTE2NDAb2MTIyNTMuNzEyMTAbxMiwgcGlikPU5vbmUpIiwiYmFja3VwIjoyLCJNYW51ZmFjdHVyZXIiOiJ2bXdhcmUsaaW5jLiIsaIk1vZGVsaIjoidm13YXJlidmliydHVhbHBsaYXRmb3JtIiwiQ29yZXNDb3VudCI6IjQiLCJDcHVOdW0iOiIxNiIsaIliNlicmlihbDIiOiI1OGEwMTE0Mi0wMjNkLTU0OTktOWI3Ny1liYTM3NmUyZDNhNjQiLCJTZXJpYWwxIjoidm13YXJliLTQyMTFhMDU4M2QwMjk5NTQtOWI3N2VhMzc2ZTJkM2E2NCIsaIkRhdGUiOiIyMDIxLTEyLTI3IDIwOjU1OjQ4LjUyMzEzNiIsaIliRpbWUiOiIyMDo1NSIsaImVycm1zZyI6IiJ9'###";
+            // string siteListJson = File.ReadAllText(AppDomain.CurrentDomain.BaseDirectory+ "sites.json").Replace("\"", "'").Replace("\n", "").Replace("\r", "")
+            //          .Replace("\t", "");
+            //  SiteListCol sitelistCol = JsonConvert.DeserializeObject<SiteListCol>(siteListJson);
+            //  Monitor monitor1 = new Monitor();
+            //  await monitor1.checkSitesAsyn(sitelistCol.SiteLists[0], siteContents);
             //Console.WriteLine(args.Length);
             if(args.Length==1)
             {
@@ -54,16 +54,17 @@ namespace DtecMonitorProject
                             try
                             {
                                 await client.GetAsync(projSite.ProjectUrl.Replace("nositescan_", ""));
+                                StoreData st = new StoreData();
+                                await Task.Run(() => st.writeEmptyData(projSite, "", false));
+                                continue;
                             }
                             catch (Exception ex)
                             {
                                 await Utility.writeErrorAsync(ex.Message);
-                                await Task.Delay(5000);
-                                await client.GetAsync(projSite.ProjectUrl.Replace("nositescan_", ""));
+                                StoreData st = new StoreData();
+                                await Task.Run(() => st.writeEmptyData(projSite, "", true));
                             }
-                            StoreData st = new StoreData();
-                            await Task.Run(() => st.writeEmptyData(projSite, "", false));
-                            continue;
+                           
                         }
                         
                         //else get the scan file from host
@@ -79,6 +80,7 @@ namespace DtecMonitorProject
                             response = await client.GetAsync(projSite.ProjectUrl);
                         }
 
+                        
                         var siteContents = await response.Content.ReadAsStringAsync();
                         Monitor monitor = new Monitor();
                         await Task.Run(() => monitor.checkSitesAsyn(projSite,siteContents));

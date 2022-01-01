@@ -1,13 +1,12 @@
 {
   "SiteLists":
   [
-    
+
     { "ProjectName"  : "Ekram service",
       "ProjectUrl"   : "http://91.224.111.79/sitescan.htm" ,
       "Receivers"    : "",
       "CellPhones"   : "09143011491"
 
     }
-
   ]
 }
