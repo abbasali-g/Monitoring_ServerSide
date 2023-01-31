@@ -56,26 +56,33 @@ namespace DtecMonitorProject
                         SiteResponse sc = JsonConvert.DeserializeObject<SiteResponse>(jsonData);
                         string smsError = sc.projectname;
 
-                        if(scAll.Date==null)
+                        if (sc.Date != null)
                         {
-                            scAll.Date = sc.Date;
-                            scAll.Time = sc.Time;
+                            if (scAll.Date == null)
+                            {
+                                scAll.Date = sc.Date;
+                                scAll.Time = sc.Time;
+                            }
+
+                            DateTime dt = DateTime.Parse(sc.Date);
+                            if (DateTime.Now > dt.AddMinutes(45))
+                            {
+                                statuscode = 0;
+                                statuscodeAll = 0;
+                                smsError += "##Monitor Service is not working" + "# now:" + DateTime.Now.ToString() + "#Sys:" + sc.Date.ToString();
+                            }
+                            if (DateTime.Now.AddMinutes(10) < dt)
+                            {
+                                statuscode = 0;
+                                statuscodeAll = 0;
+                                smsError += "##Check Server DateTime";
+                            }
                         }
-                        
-                        DateTime dt = DateTime.Parse(sc.Date);
-                        if (DateTime.Now > dt.AddMinutes(45))
-                        {
-                            statuscode = 0;
-                            statuscodeAll=0;
-                            smsError += "##Monitor Service is not working" +"# now:" +DateTime.Now.ToString()+  "#Sys:" +sc.Date.ToString();
+                        else
+                        { 
+                            
                         }
-                        if (DateTime.Now.AddMinutes(10) < dt)
-                        {
-                            statuscode = 0;
-                            statuscodeAll=0;
-                            smsError += "##Check Server DateTime";
-                        }
-                        
+
                         if(sc.mem_percent>scAll.mem_percent)
                             scAll.mem_percent=sc.mem_percent;
                         

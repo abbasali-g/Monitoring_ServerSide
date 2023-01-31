@@ -29,7 +29,7 @@ namespace DtecMonitorProject
                         {new KeyValuePair<string, string>("body", smsText)}
 
                     };
-                    await client.PostAsync(smsUrl, new FormUrlEncodedContent(nameValueCollection));
+                    var a = client.PostAsync(smsUrl, new FormUrlEncodedContent(nameValueCollection)).Result;
                 }
                 
             }

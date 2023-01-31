@@ -1,12 +1,20 @@
 {
   "SiteLists":
   [
-
-    { "ProjectName"  : "Ekram service",
-      "ProjectUrl"   : "http://91.224.111.79/sitescan.htm" ,
+    { "ProjectName"  : "Data Tamin Web ",
+      "ProjectUrl"   : "http://www.datatamin.ir/nositescan_" ,
       "Receivers"    : "",
       "CellPhones"   : "09143011491"
 
+    },
+
+    { "ProjectName"  : "Emdad",
+      "ProjectUrl"   : "https://ekrampay.emdad.ir/sitescan.htm" ,
+      "Receivers"    : "abbasali_g@yahoo.com,mohamadpakdel2014@gmail.com",
+      "CellPhones"   : "09143011491,09360866357"
+
     }
+
+
   ]
 }
