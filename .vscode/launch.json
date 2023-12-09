@@ -9,7 +9,7 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/DtecMonitorProject/bin/Debug/netcoreapp3.1/DtecMonitorProject.dll",
+            "program": "${workspaceFolder}/DtecMonitorProject/bin/Debug/net6.0/DtecMonitorProject.dll",
             "args": [],
             "cwd": "${workspaceFolder}/DtecMonitorProject",
             "console": "internalConsole",

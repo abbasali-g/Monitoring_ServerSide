@@ -9,7 +9,7 @@ namespace DtecMonitorProject
 {
     public class StoreData
     {
-         private  MySqlConnection GetConnection()
+        private  MySqlConnection GetConnection()
         {
             string json = File.ReadAllText(AppDomain.CurrentDomain.BaseDirectory+ "sqlparam.json").Replace("\"","'").Replace("\n","").Replace("\r","").Replace("\t","");
             // json ="{'username':'u3cu6bor98'}";//,'DatabaseName': 'u3cu6bor98','Password': 'aC2joLi1hW','ServerAddress': 'remotemysql.com','Port': '3306' }}";

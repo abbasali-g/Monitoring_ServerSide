@@ -13,6 +13,7 @@ namespace DtecMonitorProject
         {
             try
             {
+                smsText = smsText + "\n" + "لغو:۱۱";  
                 string[] receivers = smsReceivers.Split(',',StringSplitOptions.RemoveEmptyEntries);
                 if(receivers.Length==0)
                     return;

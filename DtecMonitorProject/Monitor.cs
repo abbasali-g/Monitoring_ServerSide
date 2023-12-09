@@ -18,7 +18,7 @@ namespace DtecMonitorProject
                 
                 DateTime dt = DateTime.Parse(sc.Date);
                 if (DateTime.Now > dt.AddMinutes(45))
-                    siteData+="##Monitor Service is not working, plz check(" + sc.Date.ToString() +")";
+                    siteData+="##سرویس مانیتورینگ  متوقف شده است!!(" + sc.Date.ToString() +")";
 
                 await Task.Delay(1);
             }
@@ -69,13 +69,13 @@ namespace DtecMonitorProject
                             {
                                 statuscode = 0;
                                 statuscodeAll = 0;
-                                smsError += "##Monitor Service is not working" + "# now:" + DateTime.Now.ToString() + "#Sys:" + sc.Date.ToString();
+                                smsError += "##ساعت یا زمان سرور دقیق نیست" + "# الان:" + DateTime.Now.ToString() + "#سیستم:" + sc.Date.ToString()+ "#"+ site.ProjectName ;
                             }
                             if (DateTime.Now.AddMinutes(10) < dt)
                             {
                                 statuscode = 0;
                                 statuscodeAll = 0;
-                                smsError += "##Check Server DateTime";
+                                smsError += "#"+ site.ProjectName+" #ساعت یا تاریخ سرور کنترل شود";
                             }
                         }
                         else
@@ -97,22 +97,22 @@ namespace DtecMonitorProject
 
                             if (sc.disk == 0)
                             {
-                                smsError += "##Disk Is Full or Will be Full";
+                                smsError += "#"+ site.ProjectName+" #دیسک در پر/در حال پر شدن است";
                                 scAll.disk = 0;
                             }
                             if (sc.dbcon == 0)
                             {
-                                smsError += "##Database Connection Error";
+                                smsError += "#"+ site.ProjectName+" #خطا در ارتباط با دیتابیس";
                                 scAll.dbcon = 0;
                             }
                             if (sc.backup == 0)
                             {
-                                smsError += "##Database Backup Error";
+                                smsError += "#"+ site.ProjectName+" #خطا در بکاپ دیتابیس";
                                 scAll.backup = 0;
                             }
                             if (sc.webservice == 0)
                             {
-                                smsError += "##Webservice Error";
+                                smsError += "#"+ site.ProjectName+" #خطا در وب سرویس ها";
                                 scAll.webservice = 0;
                             }
 
